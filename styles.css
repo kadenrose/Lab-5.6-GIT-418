@@ -1,12 +1,23 @@
+html{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #000440;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 ol button {
 	width: 28px;
 	height: 28px;
 	line-height: 10px;
-	margin-right:3px;
+	margin-right 3px;
 }
 
 li {

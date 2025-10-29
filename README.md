@@ -35,4 +35,4 @@ Modify removeItem() to remove the `<li>` at the given index. Ex: `removeItem(2)`
 
 After the modifications are complete, the user should be able to click the done button (✓) to remove the item from the list.
 
-###### Note: HTML and CSS provided prior
+#### Note: HTML and CSS provided prior
