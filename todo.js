@@ -49,7 +49,12 @@ function addItem(item) {
         removeItem(index);
     });
 
-    // TODO: Complete the function
+    // Complete the function
+    // add buttons to li item
+    $newItem.append($upButton, $downButton, $doneButton);
+
+    // add li item to ol
+    $("ol").append($newItem);
 
 }
 
@@ -59,6 +64,6 @@ function moveItem(fromIndex, toIndex) {
 }
 
 function removeItem(index) {
-    // TODO: Complete the function
+    $("ol li").eq(index).remove();
     
 }
