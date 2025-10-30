@@ -59,8 +59,28 @@ function addItem(item) {
 }
 
 function moveItem(fromIndex, toIndex) {
-    // TODO: Complete the function
+    let $items = $("ol li"); // this gets all list items
+
+    // ignore nonsensical movements
+    if (toIndex < 0 || toIndex >= $items.length){
+        return;
+    }
     
+    let $itemToMove = $items.eq(fromIndex).detach();
+    // console.log($itemToMove);
+
+    // insert it now at a new position 
+    if(toIndex === $items.length - 1){
+        // if moving to the encodeURI, use insertAfter method
+        $itemToMove.insertAfter($("ol li").eq(toIndex));
+    }else if(toIndex < fromIndex) {
+        // moving up 
+        $itemToMove.insertBefore($("ol li").eq(toIndex));
+    } else {
+        // moving down 
+        $itemToMove.insertAfter($("ol li").eq(toIndex));
+    }
+
 }
 
 function removeItem(index) {
